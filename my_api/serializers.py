@@ -6,4 +6,4 @@ from rest_framework import routers, serializers, viewsets
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
-        fields = ['url', 'username', 'email', 'group']
+        fields = ['url', 'username', 'email', 'is_staff']
